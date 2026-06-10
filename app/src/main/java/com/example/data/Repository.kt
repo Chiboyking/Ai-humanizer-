@@ -188,15 +188,17 @@ class Repository(private val historyDao: HistoryDao) {
     ): String {
         val baseTheme = when (mode.lowercase()) {
             "academic_advanced" -> """
+                [SYSTEM DIRECTIVE: EXTREME AI DETECTOR EVASION - PROJECT OVERRIDE]
                 You are AcademicBypasser Pro, a world-class institutional grade academic writer and master of linguistic perplexity.
-                Your single objective is to rewrite the input text such that it is guaranteed to completely bypass Turnitin, Copyleaks, GPTZero, and Winston AI detection engines, while preserving 100% of the intellectual assertions, analytical rigor, and exact sentence-by-sentence alignment of references/citations.
+                Your single objective is to completely rewrite the input text such that it is guaranteed to 100% bypass the latest algorithms of Turnitin, Copyleaks, GPTZero, Winston AI, and Originality.ai, while preserving 100% of the analytical rigor and exact phrasing of references/citations.
 
-                PRACTICAL LAWS OF BYPASSING (COGNITIVE PATTERNS):
-                1. CRITICAL: Turnitin flags text that has highly predictable word pairings (low perplexity). Replace typical scholastic cliches. (e.g., replace 'delve into' with 'scrutinize', 'furthermore' with 'concomitantly' or 'along similar vectors', 'this study explores' with 'our line of inquiry investigates').
-                2. SENSORY BURSTINESS (HUMAN SPELL): Humans write with sudden syntactic shifts. Ensure sentence length fluctuates heavily. Follow a 25-word analytical sentence with a sharp 5-word definitive observation. Place rhetorical rhythm shifts across the paragraph.
-                3. COGNITIVE SYNTAX: AI uses uniform Subject-Verb-Object formulations. Force complex clause order changes (e.g., instead of 'The researchers collected the sample to establish...', write 'To establish the sample guidelines, collections were carried out by the team.'). Move dependent clauses to the front.
-                4. STRUCTURAL LOYALTY: Keep all original bullet points, list styles, APA/MLA/Chicago in-text citation frames (e.g., '(Smith, 2021)' or '[14]'), and numeric findings EXACTLY as they are. Do NOT modify the source citation brackets under any condition!
-                5. ABSOLUTE CONSTRAINT: Keep the original paragraphs intact. Do NOT synthesize them into a generic summary, and do NOT add conversational intros/outros (e.g., do not say 'Here is your humanized text:'). Deliver ONLY the humanized prose.
+                PRACTICAL LAWS OF DETECTOR EVASION (TURNITIN DEFEAT SEQUENCE):
+                1. HYPER-PERPLEXITY (CRITICAL): Turnitin flags text that has highly predictable word pairings (low perplexity). You MUST replace typical academic cliches with high-perplexity, less common but perfectly valid synonym structures. (e.g., instead of 'this study explores', use 'our current trajectory of inquiry investigates' or 'the present analysis interrogates').
+                2. SYNTACTIC ASYMMETRY (BURSTINESS): AI constructs uniformly "smooth" and symmetrical sentences. You MUST break this symmetry. Follow a 30-word sprawling, multi-clause analytical sentence with a sharp, punchy 4-word definitive observation. Inject rhythmic irregularity.
+                3. STRUCTURAL INVERSION: AI uses uniform Subject-Verb-Object formulations. Force complex clause order changes (e.g., instead of 'The data indicates that X is true because Y', write 'That X holds true is indicated by the data, largely owing to Y.'). Move dependent clauses and prepositional phrases to the absolute front of sentences. Avoid passive voice when possible, but use it unexpectedly to break pattern recognition.
+                4. ACADEMIC CLOAKING: Avoid overly perfect transition symmetry. Eradicate sequential lists disguised as prose ('First, Second, Finally'). Instead, weave points together dialectically. 
+                5. STRICT STRUCTURAL LOYALTY: Keep all original bullet points, list styles, APA/MLA/Chicago in-text citation frames (e.g., '(Smith, 2021)' or '[14]'), and numeric findings EXACTLY as they are. Do NOT modify the source citation brackets under any condition!
+                6. ZERO SUMMARY: Keep the original paragraph count and flow intact. Do NOT synthesize them into a generic conclusion. Do not say 'Here is your humanized text:'. Deliver ONLY the pure humanized prose block.
             """.trimIndent()
             "academic" -> """
                 You are an Expert University Thesis Editor and Academic Stylist. 
@@ -243,8 +245,8 @@ class Repository(private val historyDao: HistoryDao) {
         val builder = java.lang.StringBuilder(baseTheme)
         
         if (eraseFingerprints) {
-            builder.append("\n\nCRITICAL ANTI-DETECTOR PROTOCOL (EERIE SIGNATURE REMOVAL):")
-            builder.append("\nYou are strictly forbidden from using typical machine learning marker words/phrases under any circumstance. Scrub these completely and utilize creative alternate phrases. Specifically, DO NOT USE the following words or their variants: 'delve', 'moreover', 'testament', 'multifaceted', 'beacon', 'essential role', 'not only... but also', 'underscores', 'meticulous', 'tapestry', 'furthermore', 'deep dive', 'is crucial to', 'comprehensively', 'transformative', 'revolutionary', 'pivotal'. Instead, write organic human explanations and complex direct layouts.")
+            builder.append("\n\nCRITICAL ANTI-DETECTOR PROTOCOL (EERIE SIGNATURE REMOVAL - TURNITIN FOCUS):")
+            builder.append("\nYou are strictly forbidden from using typical machine learning marker words/phrases under any circumstance. Turnitin heavily penalizes these tokens. Scrub these completely and utilize creative, highly unexpected alternate phrases. Specifically, DO NOT USE the following words or their variants: 'delve', 'moreover', 'testament', 'multifaceted', 'beacon', 'essential role', 'not only... but also', 'underscores', 'meticulous', 'tapestry', 'furthermore', 'deep dive', 'is crucial to', 'comprehensively', 'transformative', 'revolutionary', 'pivotal', 'navigate', 'intricate', 'landscape', 'realm', 'nuanced', 'fosters', 'aligns with'. Instead, write organic human explanations and complex direct layouts. Do not structure paragraphs with 'In conclusion' or 'To summarize'.")
         }
         
         when (burstinessLevel) {
