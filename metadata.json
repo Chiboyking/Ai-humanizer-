@@ -1,0 +1,6 @@
+{
+  "name": "AI Text Humanizer",
+  "description": "Convert AI-generated text into human-like, high-flow prose that naturally avoids detection while keeping the original structure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
